@@ -1,7 +1,7 @@
-from setuptools import setup
+import setuptools
 from codecs import open
 from os import path
-from diagnostics import __version__
+from kc_diagnostics import __version__
 
 here = path.abspath(path.dirname(__file__))
 
@@ -9,16 +9,17 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
   long_description = f.read()
 
 setuptools.setup(
-  name="kc-diagnostics",
+  name="kc_diagnostics",
   version=__version__,
   author="Fawad Mazhar",
   author_email="fawad.mazhar@nordcloud.com",
   description="Package to generate diagnostics messages.",
   long_description=long_description,
   long_description_content_type="text/markdown",
-  keywords=['AWS', 'IoT', 'Diagnostics', 'Lambda']
+  keywords=['AWS', 'IoT', 'Diagnostics', 'Lambda'],
   url="https://github.com/fawad1985/kc-diagnostics",
-  packages=['diagnostics'],
+  download_url="https://github.com/fawad1985/kc-diagnostics/archive/1.0.0.tar.gz",
+  packages=['kc_diagnostics'],
   install_requires=[
       'boto3',
       'pathlib'

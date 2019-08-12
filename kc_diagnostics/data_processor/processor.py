@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import os, re, json
 from datetime import datetime, timedelta
 
-CONFIG_FILENAME = diagnostics-service-config.xml
+CONFIG_FILENAME = "diagnostics-service-config.xml"
 
 # XMLMQTTParser is used to listen to mqtt messages and parse them using config file
 class Processor:

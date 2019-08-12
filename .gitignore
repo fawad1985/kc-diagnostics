@@ -2,3 +2,5 @@ envs/*
 aws/*
 Dockerfile
 Makefile
+*.egg-*
+dist
