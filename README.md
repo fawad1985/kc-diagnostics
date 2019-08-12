@@ -16,7 +16,7 @@ You will need to install:
   
 ## Install
 ```
-pip install diagnostics
+pip install kc-diagnostics
 ```
 
 ## Prerequisites for the consuming application

@@ -38,30 +38,6 @@ class Processor:
                 return True
         return False
 
-    # Put latest buffer record
-    def put_latest_buffer_record(self, serial_number, event_id, hour_counter, hierarchy_level):
-        raise NotImplementedError("Please Implement this method")
-
-    # Update latest buffer record
-    def update_latest_buffer_record(self, serial_number, event_id, hour_counter, hierarchy_level):
-        raise NotImplementedError("Please Implement this method")
-
-    # Get latest buffer record
-    def get_latest_buffer_record(self, serial_number, hierarchy_level):
-        raise NotImplementedError("Please Implement this method")
-
-    # Put latest trigger record
-    def put_latest_trigger_record(self, serial_number, event_id, timestamp, hierarchy_level, duration):
-        raise NotImplementedError("Please Implement this method")
-    
-    # Put latest trigger record
-    def update_latest_trigger_record(self, serial_number, event_id, timestamp, hierarchy_level, duration):
-        raise NotImplementedError("Please Implement this method")
-
-    # Get latest trigger record
-    def get_latest_trigger_record(self, serial_number, hierarchy_level):
-        raise NotImplementedError("Please Implement this method")
-
     # Parse trigger measurements
     def parse_trigger_measurements(self, measurements):
         try:

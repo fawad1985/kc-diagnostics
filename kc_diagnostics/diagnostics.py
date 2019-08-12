@@ -1,16 +1,15 @@
 from __future__ import print_function
 import json
-from data_processor import CloudProcessor
+from cloud_processor import CloudProcessor
 
 LANGUAGES = 'de,es,fr,it,pt'
 CONFIG_FILENAME = 'diagnostics-service-config.xml'
-RESOURCE_DESTINATION = './arkki/resources/'
+RESOURCE_DESTINATION = './resources/'
 CONFIG_FILENAME_PREFIX = 'diagnostics-service-config'
 
 
 
 def compute(message):
-  publisher = KinesisProducer()
   languages = LANGUAGES.split(',')
   processor = CloudProcessor(CONFIG_FILENAME, RESOURCE_DESTINATION, languages)
   config_data = processor.read_config_file()
