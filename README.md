@@ -14,15 +14,22 @@ You will need to install:
   * Python
   * pip
   
-## Getting Started
+## Install
 ```
 pip install kc-diagnostics
+```
 
-from kc-diagnostics import diagnostics
+## Getting Started
+```
+from kc_diagnostics import diagnostics
 alerts = diagnostics( dumped_json )
 ```
 
 ## Prerequisites for the consuming application
+Install dependenies
+```
+  pip install boto3 pathlib
+```
 Export required environment variables:
 ```
 export AWS_REGION=
