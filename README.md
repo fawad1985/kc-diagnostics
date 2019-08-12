@@ -14,9 +14,12 @@ You will need to install:
   * Python
   * pip
   
-## Install
+## Getting Started
 ```
 pip install kc-diagnostics
+
+from kc-diagnostics import diagnostics
+alerts = diagnostics( dumped_json )
 ```
 
 ## Prerequisites for the consuming application

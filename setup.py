@@ -18,8 +18,9 @@ setuptools.setup(
   long_description_content_type="text/markdown",
   keywords=['AWS', 'IoT', 'Diagnostics', 'Lambda'],
   url="https://github.com/fawad1985/kc-diagnostics",
-  download_url="https://github.com/fawad1985/kc-diagnostics/archive/1.0.3.tar.gz",
+  download_url="https://github.com/fawad1985/kc-diagnostics/archive/{}.tar.gz".format(__version__),
   packages=['kc_diagnostics'],
+  include_package_data=True,
   install_requires=[
       'boto3',
       'pathlib'
@@ -28,6 +29,5 @@ setuptools.setup(
       "Programming Language :: Python :: 2.7",
       "License :: OSI Approved :: MIT License",
       "Operating System :: OS Independent",
-  ],
-  zip_safe=False
+  ]
 )
