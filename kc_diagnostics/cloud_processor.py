@@ -5,7 +5,7 @@ from processor import Processor
 DEFAULT_BUFFERS_TABLE_NAME = 'diagnostics-buffer'
 DEFAULT_TRIGGERS_TABLE_NAME = 'diagnostics-trigger'
 
-AWS_REGION = os.getenv('AWS_REGION', 'eu-west-1')
+AWS_REGION = os.getenv('TARGET_AWS_REGION', 'eu-west-1')
 DYNAMODB_END_URL = 'http://dynamodb.{}.amazonaws.com'.format(AWS_REGION)
 BUFFERS_TABLE_NAME = os.getenv('BUFFERS_TABLE_NAME', DEFAULT_BUFFERS_TABLE_NAME)
 TRIGGERS_TABLE_NAME = os.getenv('TRIGGERS_TABLE_NAME', DEFAULT_TRIGGERS_TABLE_NAME)

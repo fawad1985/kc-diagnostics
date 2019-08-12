@@ -32,7 +32,7 @@ Install dependenies
 ```
 Export required environment variables:
 ```
-export AWS_REGION=
+export TARGET_AWS_REGION=
 export BUFFERS_TABLE_NAME=
 export TRIGGERS_TABLE_NAME=
 ```
