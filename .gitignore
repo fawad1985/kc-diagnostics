@@ -1,3 +1,4 @@
 envs/*
 aws/*
-.serverless
+Dockerfile
+Makefile
