@@ -28,7 +28,7 @@ alerts = diagnostics( dumped_json )
 ## Prerequisites for the consuming application
 Install dependenies
 ```
-  pip install boto3 pathlib
+  pip install pathlib
 ```
 Export required environment variables:
 ```

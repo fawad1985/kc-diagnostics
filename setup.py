@@ -22,7 +22,6 @@ setuptools.setup(
   packages=['kc_diagnostics'],
   include_package_data=True,
   install_requires=[
-      'boto3',
       'pathlib'
   ],
   classifiers=[
