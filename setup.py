@@ -22,7 +22,7 @@ setuptools.setup(
   packages=['kc_diagnostics'],
   include_package_data=True,
   install_requires=[
-      'pathlib'
+      'boto3'
   ],
   classifiers=[
       "Programming Language :: Python :: 2.7",

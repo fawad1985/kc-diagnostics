@@ -21,14 +21,15 @@ pip install kc-diagnostics
 
 ## Getting Started
 ```
-from kc_diagnostics import diagnostics
-alerts = diagnostics( dumped_json )
+from kc_diagnostics import Diagnostics
+diagnostics = Diagnostics()
+alerts = diagnostics.generate_alerts( dumped_json )
 ```
 
 ## Prerequisites for the consuming application
 Install dependenies
 ```
-  pip install pathlib
+  pip install boto3
 ```
 Export required environment variables:
 ```
